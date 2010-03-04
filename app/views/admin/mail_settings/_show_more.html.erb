@@ -1,0 +1,12 @@
+<h4><%= t("login_email_settings") %></h4>
+
+<table>
+  <tr>
+    <th scope="row"><%= t("login_email_from") %>:</th>
+    <td><%= Spree::ExtendedLogin::Config[:login_email_from] %></td>
+  </tr>
+  <tr>
+    <th scope="row"><%= t("login_email_cc") %>:</th>
+    <td><%= Spree::ExtendedLogin::Config[:login_email_cc] %></td>
+  </tr>
+</table>

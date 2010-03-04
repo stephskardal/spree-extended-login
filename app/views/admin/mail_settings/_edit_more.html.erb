@@ -1,0 +1,14 @@
+<fieldset>
+  <legend><%= t('login_email_settings') %></legend>
+
+  <p>
+    <label><%= t('login_email_from') %></label><br />
+    <%= text_field_tag('login_preferences[login_email_from]', Spree::ExtendedLogin::Config[:login_email_from], :size => 40, :maxlength => 256) %>
+  </p>
+
+  <p>
+    <label><%= t('login_email_cc') %></label><br />
+    <%= text_field_tag('login_preferences[login_email_cc]', Spree::ExtendedLogin::Config[:login_email_cc], :size => 40, :maxlength => 256) %>
+  </p>
+
+</fieldset>
